@@ -1,7 +1,28 @@
 aid: carpooling
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/carpooling.png
 name: Carpooling
-description: Carpooling is a company surfaced as a portfolio company of earlybird and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Carpooling.com GmbH was one of Europe's largest ridesharing / carpooling
+  platforms, founded in Munich, Germany and backed by Earlybird Venture Capital.
+  It connected drivers with empty seats to passengers travelling the same route
+  across Europe. In April 2015 the company was acquired by the French ridesharing
+  operator BlaBlaCar and its operations were merged into that platform. The
+  carpooling.com domain and every developer-facing subdomain (developer / api /
+  docs) now redirect to BlaBlaCar (blablacar.co.uk), and no independent Carpooling
+  developer portal, API, or specification remains. This profile is retained in the
+  API Evangelist network as an acquired/defunct company record; there is no live
+  API surface of its own to enrich.
 url: https://raw.githubusercontent.com/api-evangelist/carpooling/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +30,31 @@ x-backed-by:
 - earlybird
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: blablacar
+x-acquisition-year: 2015
+x-note: >-
+  carpooling.com and its api/developer/docs subdomains 301/redirect to
+  blablacar.co.uk (probed 2026-07-18); no independent developer surface exists.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Ridesharing
+- Carpooling
+- Mobility
+- Transportation
+- Acquired
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

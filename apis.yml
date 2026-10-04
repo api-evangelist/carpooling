@@ -48,7 +48,6 @@ created: '2026-07-17'
 modified: '2026-09-15'
 tags:
 - Company
-- Ridesharing
 - Carpooling
 - Mobility
 - Transportation
@@ -65,3 +64,5 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-tags-removed:
+- Ridesharing
